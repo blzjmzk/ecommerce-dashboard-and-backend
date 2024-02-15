@@ -1,0 +1,3 @@
+- shadcn ui
+  -clerk authentication
+- zustand
