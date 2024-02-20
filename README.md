@@ -1,3 +1,4 @@
 - shadcn ui
-  -clerk authentication
+- clerk authentication
 - zustand
+- react hook form + zod
