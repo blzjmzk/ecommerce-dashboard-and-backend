@@ -2,6 +2,8 @@
 import { useStoreModal } from "@/hooks/use-store-modal";
 import { useEffect } from "react";
 
+//strona wyłącznie do wywołania modala
+
 const SetupPage = () => {
   //importy dobrze działające w effect hook
   const onOpen = useStoreModal((state) => state.onOpen);
@@ -13,7 +15,7 @@ const SetupPage = () => {
     }
   }, [isOpen, onOpen]);
 
-  return <div className="p-10">Root Page</div>;
+  return null;
 };
 
 export default SetupPage;
