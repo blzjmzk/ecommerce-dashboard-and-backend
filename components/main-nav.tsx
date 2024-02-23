@@ -13,6 +13,11 @@ const MainNav = ({
 
   const routes = [
     {
+      href: `/${params.storeId}`, //settings tylko dla poszczególnego sklepu
+      label: "Dashboard",
+      active: pathname === `/${params.storeId}`,
+    },
+    {
       href: `/${params.storeId}/settings`, //settings tylko dla poszczególnego sklepu
       label: "Settings",
       active: pathname === `/${params.storeId}/settings`,
