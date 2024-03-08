@@ -14,7 +14,6 @@ import Heading from "@/components/ui/heading";
 import ImageUpload from "@/components/ui/image-upload";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { useOrigin } from "@/hooks/use-origin";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Billboard } from "@prisma/client";
 import axios from "axios";
@@ -39,7 +38,6 @@ interface BillboardFormProps {
 const BillboardForm = ({ initialData }: BillboardFormProps) => {
   const params = useParams();
   const router = useRouter();
-  const origin = useOrigin();
 
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -68,6 +66,7 @@ const BillboardForm = ({ initialData }: BillboardFormProps) => {
       } else {
         await axios.post(`/api/${params.storeId}/billboards`, data);
       }
+      router.push(`/${params.storeId}/billboards`);
       router.refresh();
       toast.success(toastMessage);
     } catch (error) {
@@ -84,7 +83,7 @@ const BillboardForm = ({ initialData }: BillboardFormProps) => {
         `/api/${params.storeId}/billboards/${params.billboardId}`
       );
       router.refresh();
-      router.push("/");
+      router.push(`/${params.storeId}/billboards`);
       toast.success("Billboard deleted.");
     } catch (error) {
       toast.error(
@@ -165,7 +164,6 @@ const BillboardForm = ({ initialData }: BillboardFormProps) => {
           </Button>
         </form>
       </Form>
-      <Separator />
     </>
   );
 };
