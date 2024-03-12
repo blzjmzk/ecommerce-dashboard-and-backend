@@ -28,6 +28,11 @@ const MainNav = ({
       active: pathname === `/${params.storeId}/categories`,
     },
     {
+      href: `/${params.storeId}/sizes`, //billboards tylko dla poszczególnego sklepu
+      label: "Sizes",
+      active: pathname === `/${params.storeId}/sizes`,
+    },
+    {
       href: `/${params.storeId}/settings`, //settings tylko dla poszczególnego sklepu
       label: "Settings",
       active: pathname === `/${params.storeId}/settings`,
