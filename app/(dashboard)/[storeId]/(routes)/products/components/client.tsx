@@ -30,7 +30,7 @@ const ProductClient = ({ data }: ProductClientProps) => {
         </Button>
       </div>
       <Separator />
-      <DataTable searchKey="label" columns={columns} data={data} />
+      <DataTable searchKey="name" columns={columns} data={data} />
       <Heading title="Api" description="API calls for products" />
       <Separator />
       <ApiList entityName="products" entityIdName="productId" />
