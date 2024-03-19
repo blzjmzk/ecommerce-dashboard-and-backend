@@ -123,7 +123,7 @@ model Order {
   orderItems OrderItem[]
   isPaid     Boolean     @default(false)
   phone      String      @default("")
-  adress     String      @default("")
+  address    String      @default("")
   createdAt  DateTime    @default(now())
   updatedAt  DateTime    @updatedAt
 
@@ -135,7 +135,7 @@ model OrderItem {
   orderId   String
   order     Order   @relation(fields: [orderId], references: [id])
   productId String
-  produc    Product @relation(fields: [productId], references: [id])
+  product   Product @relation(fields: [productId], references: [id])
 
   @@index([orderId])
   @@index([productId])
