@@ -1,3 +1,5 @@
+stack
+
 - shadcn ui
 - clerk authentication
 - zustand
