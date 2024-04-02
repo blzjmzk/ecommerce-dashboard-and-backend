@@ -1,4 +1,4 @@
-import prismadb from "@/lib/psismadb";
+import prismadb from "@/lib/prismadb";
 import ColorForm from "./components/color-form";
 
 const ColorPage = async ({ params }: { params: { colorId: string } }) => {

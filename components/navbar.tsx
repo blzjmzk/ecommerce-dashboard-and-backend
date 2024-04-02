@@ -3,7 +3,7 @@ import React from "react";
 import MainNav from "./main-nav";
 import StoreSwitcher from "./store-switcher";
 import { redirect } from "next/navigation";
-import prismadb from "@/lib/psismadb";
+import prismadb from "@/lib/prismadb";
 
 const Navbar = async () => {
   const { userId } = auth();

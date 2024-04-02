@@ -1,4 +1,4 @@
-import prismadb from "@/lib/psismadb";
+import prismadb from "@/lib/prismadb";
 import { format } from "date-fns";
 import OrderClient from "./components/client";
 import { OrderColumn } from "./components/columns";
