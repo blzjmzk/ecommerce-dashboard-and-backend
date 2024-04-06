@@ -1,6 +1,6 @@
 # E-commerce Project (1/2): Admin dashboard and backend
 
-This is fist part of my e-commerce project where I build from scratch an e-commerce platform in two parts: (1) Dashboard and backend to support multiple shops that can be connected to it, (2) Online shop connected to dashboard and backend.
+This is first part of my e-commerce project where I build from scratch an e-commerce platform in two parts: (1) Dashboard and backend to support multiple shops that can be connected to it, (2) Online shop connected to dashboard and backend.
 
 You can find the second part of my E-commerce project (the online shop connected to this dashboard) here:
 [https://github.com/blzjmzk/ecommerce-store](https://github.com/blzjmzk/ecommerce-store)
